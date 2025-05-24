@@ -1,7 +1,7 @@
 :root {
     --k-custom-body-bg: #eeeeee;
-    --bs-primary: #4dbb43;
-    --bs-secondary: #1c4519;
+    --bs-primary: #51BDAD;
+    --bs-secondary: #25AD68;
 
 }
 
@@ -11,8 +11,8 @@
 }
 
 .btn {
-    background-color: var(--bs-secondary);
-    border-color: var(--bs-primary);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-secondary);
 }
 
 .form-check-input:checked {
@@ -26,7 +26,7 @@
     color: #f8f9fa;
 }
 .bg-secondary{
-    background: radial-gradient(var(--bs-primary), rgb(77, 187, 67, 0.5))!important;
+    background-color: #ba99d6 !important;
     
 }
 
@@ -57,7 +57,7 @@
 }
 
 .text1{
-    background: radial-gradient(rgb(128, 0, 128), rgb(227, 3, 227));
+    background: #c2fcf1;
     -webkit-background-clip: text; /* For older browsers */
     background-clip: text;
     color: transparent;
@@ -65,7 +65,7 @@
 }
 
 .text2{
-    background: radial-gradient(rgb(53, 0, 128), rgb(107, 3, 227));
+    background: #65e8d4;
     -webkit-background-clip: text; /* For older browsers */
     background-clip: text;
     color: transparent;
@@ -74,7 +74,7 @@
 }
 
 .text3{
-    background: radial-gradient(rgb(26, 0, 128), rgb(3, 3, 227));
+    background: #51BDAD;
     -webkit-background-clip: text; /* For older browsers */
     background-clip: text;
     color: transparent;
@@ -108,15 +108,15 @@
 /* Custom dark theme colors */
 [data-bs-theme="dark"] {
 
-    --bs-body-bg: #212529;
+    --bs-body-bg: #2f302f;
     --bs-body-color: #f8f9fa;
     --bs-card-bg: #1c1e1f;
     --bs-border-color: #495057;
-    --k-custom-body-bg: #1a1b1c;
+    --k-custom-body-bg: #100f21;
 
     /* Custom dark theme colors for buttons */
-    --bs-primary: rgb(77, 187, 67);
-    --bs-secondary: rgb(28, 69, 25);
+    --bs-primary: #51BDAD;
+    --bs-secondary: #25AD68;
 }
 
 /* Apply to specific components */
