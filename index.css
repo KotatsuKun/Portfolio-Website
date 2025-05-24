@@ -1,0 +1,143 @@
+:root {
+    --k-custom-body-bg: #eeeeee;
+    --bs-primary: #4dbb43;
+    --bs-secondary: #1c4519;
+
+}
+
+.card {
+    background-color: var(--bs-card-bg);
+    border-color: var(--bs-border-color);
+}
+
+.btn {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-primary);
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-primary);
+}
+
+.form-control {
+    background-color: #999999;
+    border-color: #495057;
+    color: #f8f9fa;
+}
+.bg-secondary{
+    background: radial-gradient(var(--bs-primary), rgb(77, 187, 67, 0.5))!important;
+    
+}
+
+/* animation */
+.sliding-text-container {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliding-text-wrapper {
+    position: absolute;
+    width: 100%;
+    animation: slideText 6s infinite;
+}
+
+.sliding-text {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateY(100%);
+    animation: textFade 6s infinite;
+}
+
+.text1{
+    background: radial-gradient(rgb(128, 0, 128), rgb(227, 3, 227));
+    -webkit-background-clip: text; /* For older browsers */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.text2{
+    background: radial-gradient(rgb(53, 0, 128), rgb(107, 3, 227));
+    -webkit-background-clip: text; /* For older browsers */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+
+}
+
+.text3{
+    background: radial-gradient(rgb(26, 0, 128), rgb(3, 3, 227));
+    -webkit-background-clip: text; /* For older browsers */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.sliding-text:nth-child(1) { animation-delay: 0s; }
+.sliding-text:nth-child(2) { animation-delay: 2s; }
+.sliding-text:nth-child(3) { animation-delay: 4s; }
+
+
+@keyframes textFade {
+    0%, 5% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    10%, 25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30%, 35% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    40%, 100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+/* Custom dark theme colors */
+[data-bs-theme="dark"] {
+
+    --bs-body-bg: #212529;
+    --bs-body-color: #f8f9fa;
+    --bs-card-bg: #1c1e1f;
+    --bs-border-color: #495057;
+    --k-custom-body-bg: #1a1b1c;
+
+    /* Custom dark theme colors for buttons */
+    --bs-primary: rgb(77, 187, 67);
+    --bs-secondary: rgb(28, 69, 25);
+}
+
+/* Apply to specific components */
+[data-bs-theme="dark"] .card {
+    background-color: var(--bs-card-bg);
+    border-color: var(--bs-border-color);
+}
+
+[data-bs-theme="dark"] .btn {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-secondary);
+}
+
+[data-bs-theme="dark"] .form-check-input:checked {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-primary);
+}
+
+[data-bs-theme="dark"] .form-control {
+    background-color: #2c3034;
+    border-color: #495057;
+    color: #f8f9fa;
+}
+
