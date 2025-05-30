@@ -5,13 +5,17 @@
     --k-custom-body-bg: #eeeeee;
     --bs-primary: #51BDAD;
     --bs-secondary: #25AD68;
+    
+    /*buttons*/
+   
+    
+    /*links*/
     --bs-link-hover-color:  #cfa7f1;
     --bs-link-color:  #ae79dd;
-
-
     --bs-link-hover-color-rgb: 207, 167, 241;
     --bs-link-color-rgb: 174, 121, 221;
-    
+
+    /*fonts*/
     --bs-body-font-family: "Hubot Sans", sans-serif;
 
     font-family: "Hubot Sans", sans-serif;
@@ -23,14 +27,24 @@ h1, h2, h3, h4, h5{
     color: #65e8d4;
 }
 
+.btn-primary{
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: #9deade;
+    --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+    --bs-btn-active-bg: #3d7e5d;
+    --bs-btn-active-border-color: var(--bs-btn-active-bg);
+}
+
 .card {
     background-color: var(--bs-card-bg);
     border-color: var(--bs-border-color);
+    transition: transform 0.3s ease;
 }
 
-.btn {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-secondary);
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .form-check-input:checked {
@@ -78,7 +92,7 @@ h1, h2, h3, h4, h5{
 }
 
 .text1{
-    background: #c2fcf1;
+    background: #96c2b9;
     -webkit-background-clip: text; /* For older browsers */
     background-clip: text;
     color: transparent;
@@ -138,6 +152,7 @@ h1, h2, h3, h4, h5{
     /* Custom dark theme colors for buttons */
     --bs-primary: #51BDAD;
     --bs-secondary: #25AD68;
+    
 }
 
 /* Apply to specific components */
@@ -146,10 +161,6 @@ h1, h2, h3, h4, h5{
     border-color: var(--bs-border-color);
 }
 
-[data-bs-theme="dark"] .btn {
-    background-color: var(--bs-primary);
-    border-color: var(--bs-secondary);
-}
 
 [data-bs-theme="dark"] .form-check-input:checked {
     background-color: var(--bs-secondary);
