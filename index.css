@@ -3,6 +3,7 @@
 
 :root {
     --k-custom-body-bg: #eeeeee;
+    --k-custom-card-t: #65e8d4;
     --bs-primary: #51BDAD;
     --bs-secondary: #25AD68;
     
@@ -24,7 +25,7 @@
 }
 
 h1, h2, h3, h4, h5{
-    color: #65e8d4;
+    color: var(--k-custom-card-t);
 }
 
 .btn-primary{
@@ -45,11 +46,17 @@ h1, h2, h3, h4, h5{
 .card:hover{
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+   
 }
 
 .form-check-input:checked {
     background-color: var(--bs-secondary);
     border-color: var(--bs-primary);
+}
+
+.form-check-input:focus {
+    border-color: #85ea82;
+    box-shadow: 0 0 0 .25rem rgba(13, 253, 73, 0.25);
 }
 
 .form-control {
