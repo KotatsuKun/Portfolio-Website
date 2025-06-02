@@ -19,22 +19,34 @@
 
 <body>
 
-    <header class="container text-center">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--k-custom-body-bg);">
 
-        <div class="fixed-top text-end" style="background-color: var(--k-custom-body-bg);">
-            <div class="form-check form-switch d-inline-block py-2 pe-2">
-                <input class="form-check-input" type="checkbox" id="darkModeToggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-moon-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
-                </svg>
-                <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
-
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <span class="navbar-text text-end">
+                    <div class="form-switch d-inline-block text">
+                        <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                        </svg>
+                        <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+                    </div>
+                </span>
             </div>
-
         </div>
 
+
+
+    </nav>
+
+
+    <header class="container text-center">
 
         <div class="py-5">
             <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfn2by23xokzzr4i2br6ggft/bafkreihrpgv6kmhtvwmrn35qlwoiocwfl3i2jyc6lls2fj63522cs7jfpe@jpeg"

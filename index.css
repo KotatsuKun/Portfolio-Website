@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5{
     --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
     --bs-btn-active-bg: #3d7e5d;
     --bs-btn-active-border-color: var(--bs-btn-active-bg);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover{
+    transform: scale(1.09);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .card {
