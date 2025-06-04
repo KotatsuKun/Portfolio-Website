@@ -57,32 +57,72 @@
     </nav>
 
     <main class=" container text-center">
+      
+        <div class="p-2">
+            <div class="p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                    <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
+                  </svg>
+                <h5 style="color: var(--bs-body-color);">Let's tune to...</h5>
+            </div>
+            <div class="glow-visualizer p-0" style="height: 20px;">
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+                <div class="glow-bar"></div>
+            </div>
+
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0BGNWwEDRKUVgiMdqJHdDU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="quick"></iframe>
+        
+
+        </div>    
+
         <div class="row">
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916392004096061/test3-2.png?ex=682fca2c&is=682e78ac&hm=9dea4b93bffdaf4cc3bfad25758aa63bb98ebda2213104bc23b44f26c7c7c06e&"
+                <img src="/imgs/Aoki-bday.webp"
                     alt="" style="height: 20rem; width: 20rem;">
             </div>
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916120787681321/AI_Mind.png?ex=682fc9eb&is=682e786b&hm=79d5add43cf7bc5fa63247434a0b59e28575d9cec17e325461244aec74c56264&"
+                <img src="/imgs/AI_Mind.webp"
                     alt="" style="height: 20rem; width: 20rem;">
             </div>
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916121265836102/Perspective_lol.png?ex=682fc9ec&is=682e786c&hm=d90eb95ae1a6e4d54c3f0b1d2d0cdf5eb2fb0d8a4a389010be5d2aa3c5dc04fc&"
+                <img src="/imgs/Face.webp"
                     alt="" style="height: 20rem; width: 20rem;">
             </div>
 
         </div>
         <div class="row">
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916392004096061/test3-2.png?ex=682fca2c&is=682e78ac&hm=9dea4b93bffdaf4cc3bfad25758aa63bb98ebda2213104bc23b44f26c7c7c06e&"
+                <img src="imgs/Perspective_lol.webp"
                     alt="" style="height: 20rem; width: 20rem;">
             </div>
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916392004096061/test3-2.png?ex=682fca2c&is=682e78ac&hm=9dea4b93bffdaf4cc3bfad25758aa63bb98ebda2213104bc23b44f26c7c7c06e&"
-                    alt="" style="height: 20rem; width: 20rem;">
+                <img src="imgs/Capi.webp"
+                    alt="" style="height: 20rem; width: auto;">
             </div>
             <div class="col p-2">
-                <img src="https://cdn.discordapp.com/attachments/1091525836655571064/1374916392004096061/test3-2.png?ex=682fca2c&is=682e78ac&hm=9dea4b93bffdaf4cc3bfad25758aa63bb98ebda2213104bc23b44f26c7c7c06e&"
+                <img src="/imgs/Remake.webp"
                     alt="" style="height: 20rem; width: 20rem;">
             </div>
 
@@ -128,29 +168,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script>
-        const darkModeToggle = document.getElementById('darkModeToggle');
-
-        // Initialize checkbox state based on current theme
-        darkModeToggle.checked = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-
-        // Add event listener for changes
-        darkModeToggle.addEventListener('change', () => {
-            const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-bs-theme', newTheme);
-        });
-
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-bs-theme', currentTheme);
-        darkModeToggle.checked = currentTheme === 'dark';
-
-        // Event listener
-        darkModeToggle.addEventListener('change', () => {
-            const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-bs-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -27,7 +27,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active btn-primary" style="background-color: rgba(0, 0, 0, 0);" aria-current="page" href="index.html">
+                        <a class="nav-link active btn-primary" style="background-color: rgba(0, 0, 0, 0);"
+                            aria-current="page" href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-house-door" viewBox="0 0 16 16">
                                 <path
@@ -50,56 +51,57 @@
                 </span>
             </div>
         </div>
-        
+
 
 
     </nav>
 
+
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*vvEF_3jfExI93QtS" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML site</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="https://github.com/KotatsuKun/HTML-Course" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*vvEF_3jfExI93QtS" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML site</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="https://github.com/KotatsuKun/HTML-Course" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*vvEF_3jfExI93QtS" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML site</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="https://github.com/KotatsuKun/HTML-Course" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://miro.medium.com/v2/resize:fit:1400/0*vvEF_3jfExI93QtS" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">HTML site</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="https://github.com/KotatsuKun/HTML-Course" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                Yo mama 2
-            </div>
-            <div class="col-md-4">
-                Yo mama 3
-            </div>
+    
 
-
-            <script>
-                const darkModeToggle = document.getElementById('darkModeToggle');
-
-                // Initialize checkbox state based on current theme
-                darkModeToggle.checked = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-
-                // Add event listener for changes
-                darkModeToggle.addEventListener('change', () => {
-                    const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-                    document.documentElement.setAttribute('data-bs-theme', newTheme);
-                });
-
-                const currentTheme = localStorage.getItem('theme') || 'light';
-                document.documentElement.setAttribute('data-bs-theme', currentTheme);
-                darkModeToggle.checked = currentTheme === 'dark';
-
-                // Event listener
-                darkModeToggle.addEventListener('change', () => {
-                    const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-                    document.documentElement.setAttribute('data-bs-theme', newTheme);
-                    localStorage.setItem('theme', newTheme);
-                });
-            </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

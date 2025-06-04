@@ -27,8 +27,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
+                
+                <!--<img src="https://cdn-icons-png.flaticon.com/512/3097/3097041.png" style="height: 5rem;"> -->
+
                 <span class="navbar-text text-end">
-                    <div class="form-switch d-inline-block text">
+                    <div class="form-switch d-inline-block">
                         <input class="form-check-input" type="checkbox" id="darkModeToggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-moon-fill" viewBox="0 0 16 16">
@@ -50,7 +53,7 @@
 
         <div class="py-5">
             <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfn2by23xokzzr4i2br6ggft/bafkreihrpgv6kmhtvwmrn35qlwoiocwfl3i2jyc6lls2fj63522cs7jfpe@jpeg"
-                alt="green haired anime boy smiling making a heart with fingers" class="rounded-circle" width="180"
+                alt="green haired anime boy smiling making a heart with fingers" class="rounded-circle icon-img" width="180"
                 height="180">
         </div>
 
@@ -186,15 +189,14 @@
                     <div class="card-body">
                         <h5 class="card-title">Programming</h5>
                         <p class="card-text"> The page of programming related projects</p>
-                       <a href="programming.html" class="stretched-link"></a>
+                        <a href="programming.html" class="stretched-link"></a>
                     </div>
 
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="/imgs/Aoki-bday.webp"
-                        class="card-img-top" alt="...">
+                    <img src="/imgs/Aoki-bday.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Arts</h5>
                         <p class="card-text"> The page of art related projects</p>
@@ -256,29 +258,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script>
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        
-        // Initialize checkbox state based on current theme
-        darkModeToggle.checked = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-        
-        // Add event listener for changes
-        darkModeToggle.addEventListener('change', () => {
-            const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-bs-theme', newTheme);
-        });
-
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-bs-theme', currentTheme);
-        darkModeToggle.checked = currentTheme === 'dark';
-
-        // Event listener
-        darkModeToggle.addEventListener('change', () => {
-            const newTheme = darkModeToggle.checked ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-bs-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
