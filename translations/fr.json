@@ -1,0 +1,47 @@
+{
+  "hello1": "Bonjour, je suis Kotatsu",
+  "hab1": "Programmeur",
+  "hab2": "Artiste",
+  "hab3": "Youtuber",
+  "desc": "Je suis juste un idiot qui aime faire beaucoup trop de choses",
+  "my_hab": "Mes compétences",
+  "draw": "DESSIN",
+  "ing_fl": "ANGLAIS COURANT",
+  "vd-edit": "COMPÉTENCES EN MONTAGE VIDÉO",
+  "music_comp": "COMPÉTENCES EN COMPOSITION MUSICALE",
+  "projects": "Projets",
+  "c-programming": "Programmation",
+  "p-desc": "La page des projets liés à la programmation",
+  "c-arts": "Arts",
+  "a-desc": "La page des projets liés à l'art",
+  "c-video": "Vidéos",
+  "v-desc": "La page des projets liés aux vidéos",
+  "contacts": "Contacts",
+  "copyright": "© Copyright 2024. Créé par Kotatsu Kun sur Github",
+  
+  "t-arts": "Arts",
+  "tune-in": "Écoutons...",
+
+  "t-videos": "Vidéos",
+  "t-musics": "Musiques",
+
+  "t-programming": "Programmation", 
+  "c-Hub1": "Kotatsu Hub - première version",
+  "d-Hub1": "Le premier site que j'ai jamais créé",
+  "repo-acess": "Accéder au dépôt",
+  "web-acess": "Accéder au site web", 
+  "c-taoAdv": "Tao Adventure",
+  "d-taoAdv": "Un jeu de choix simple basé sur des romans taoïstes chinois",
+  "c-furn-mod": "KotatsuKun Furniture Mod - Fabric",
+  "d-furn-mod": "Le premier mod que j'ai programmé",
+  "c-shader": "Kotatsu's Test Shaders",
+  "d-shader": "Une expérience avec les shaders Minecraft",
+  "c-engine": "EngineTest",
+  "d-engine": "La première version d'une expérience de programmation graphique 3D avec Python",
+  "c-deco-mod": "Kotatsu's Decoration Mod",
+  "d-deco-mod": "Un mod Minecraft Fabric qui ajoute des décorations orientales au jeu",
+  "mod-acess": "Accéder à la page du mod",
+  
+  
+  "language_name": "Français"
+}

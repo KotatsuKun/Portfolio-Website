@@ -33,7 +33,7 @@
                         <a class="nav-link active btn-primary" style="background-color: rgba(0, 0, 0, 0);"
                             aria-current="page" href="index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-house-door" viewBox="0 0 16 16">
+                                class="bi bi-house-door button-hover" viewBox="0 0 16 16">
                                 <path
                                     d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
                             </svg>
@@ -51,6 +51,7 @@
                         </svg>
                         <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
                     </div>
+                
                 </span>
             </div>
         </div>
@@ -59,74 +60,74 @@
 
     </nav>
 
-    <main class=" container text-center">
+    <main class="container text-center">
 
-        <h1 class="p-4 floating-text" style="font-family: Londrina Sketch, sans-serif; font-size: 4rem;">
+        <h1 data-i18n="t-arts" class="p-4 floating-text londrina-sketch-regular">
             Arts
         </h1>
 
         <div class="p-2">
             <div class="p-1">
-
-                <p style="color: var(--bs-body-color); font-family: Birthstone, cursive; font-size: 2rem;">
+                <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-headphones icon-rotate" viewBox="0 0 16 16">
+                        class="bi bi-headphones icon-rotate d-inline-block" viewBox="0 0 16 16">
                         <path
                             d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5" />
                     </svg>
-                    Let's tune to...
-                </p>
+                   <h2 data-i18n="tune-in" style="color: var(--bs-body-color);" class="alumni-sans-pinstripe-regular d-inline-block">Let's tune to...</h2> 
+                </div>
             </div>
 
-            <div class="glow-visualizer p-0" style="height: 20px;">
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
-                <div class="glow-bar"></div>
+
+            <div class="hover-item">
+                <div class="glow-visualizer p-0 " style="height: 20px;">
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                    <div class="glow-bar"></div>
+                </div>
+
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/01zwFLoQgAISCdEJqTTwbt?utm_source=generator&theme=0"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
             </div>
-
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/track/0BGNWwEDRKUVgiMdqJHdDU?utm_source=generator" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="quick">
-
-            </iframe>
-
 
         </div>
 
-        <h2 style="font-family: Londrina Sketch, sans-serif;">Galery</h2>
+        <h2 data-i18n="galery" style="font-family: Londrina Sketch, sans-serif;">Galery</h2>
 
         <div class="image-container">
             <div class="row">
                 <div class="col p-2">
-                    <img src="/imgs/Aoki-bday.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/Aoki-bday.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/AI_Mind.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/AI_Mind.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/Face.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/Face.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
 
             </div>
@@ -138,7 +139,7 @@
                     <img src="imgs/Capi.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/Remake.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/Remake.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
 
             </div>
@@ -150,7 +151,7 @@
                     <img src="imgs/20240205_210106.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/Layers.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/Layers.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
 
             </div>
@@ -162,7 +163,8 @@
                     <img src="imgs/Elf.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/Porcelain_-_metrial_study.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/Porcelain_-_metrial_study.webp" alt="" style="height: 20rem; width: 20rem;"
+                        class="box-shadow">
                 </div>
 
             </div>
@@ -174,16 +176,91 @@
                     <img src="imgs/test3-2.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
                 </div>
                 <div class="col p-2">
-                    <img src="/imgs/likeness1.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
+                    <img src="imgs/likeness1.webp" alt="" style="height: 20rem; width: 20rem;" class="box-shadow">
                 </div>
 
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Untitled20_2.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/Untitled46_2.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/zhang_-_test.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Xin_Chiao.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/White_Queen1.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/Untitled5.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/6d0ddc71c00948dfb24c75eac94d7955.webp" alt="" style="height: 20rem; width: auto;"
+                        class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/Illustration.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/Untitled96.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Untitled93.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/Untitled9.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/Untitled74_3.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Untitled70.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/Untitled61_2.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/Untitled58.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Untitled49-1.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/Untitled49.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-2">
+                    <img src="imgs/Untitled47.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-1">
+                    <img src="imgs/Illustration-1.webp" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
+                <div class="col p-1">
+                    <img src="imgs/test3.gif" alt="" style="height: 20rem; width: auto;" class="box-shadow">
+                </div>
             </div>
         </div>
 
 
     </main>
     <footer class="container py-5 text-center">
-        <h3>Contacts</h3>
+        <h3 data-i18n="contacts">Contacts</h3>
         <div class="col">
             <div class=>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
@@ -213,7 +290,7 @@
             </div>
 
         </div>
-        <p>© Copyright 2024. Made by Kotatsu Kun on Github</p>
+        <p data-i18n="copyright">© Copyright 2024. Made by Kotatsu Kun on Github</p>
 
     </footer>
 
@@ -222,6 +299,7 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
+    <script src="language_changer.js"></script>
 
 </body>
 

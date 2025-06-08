@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
 :root {
     --k-custom-body-bg: #eeeeee;
@@ -24,8 +26,8 @@
     font-weight: 400;
     font-style: normal;
 
-    --spotify-dominant-color: rgb(153, 32, 34);
-    --spotify-glow-color: rgb(199, 39, 42);
+    --spotify-dominant-color: var(--bs-body-color);
+    --spotify-glow-color: var(--bs-link-hover-color);
 }
 
 .londrina-sketch-regular {
@@ -51,9 +53,34 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
+
+.alumni-sans-pinstripe-regular {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .alumni-sans-pinstripe-regular-italic {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .cabin-sketch-regular {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cabin-sketch-bold {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
 
 h1,
 h2,
@@ -73,21 +100,11 @@ h5 {
     transition: transform 0.3s ease;
 }
 
-.btn-primary:hover {
-    transform: scale(1.09);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
 
 .card {
     background-color: var(--bs-card-bg);
     border-color: var(--bs-border-color);
     transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-
 }
 
 .form-check-input:checked {
@@ -108,8 +125,36 @@ h5 {
 
 .bg-secondary {
     background-color: #ba99d6 !important;
-
 }
+
+.language-bg{
+    background-color: transparent;
+    border: transparent;
+}
+
+.bgd-html{
+    background-color: #e34c26;
+}
+.bgd-css{
+    background-color:#663399;
+}
+
+.bgd-js{
+    background-color: #f1e05a;
+}
+
+.bgd-jv{
+    background-color: #b07219;
+}
+
+.bgd-py{
+    background-color: #3572a5;
+}
+
+.bgd-gl{
+    background-color: #5686a5;
+}
+
 
 .icon-rotate {
     transform: rotate(-23deg);
@@ -119,7 +164,80 @@ h5 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);;
 }
 
+.rotate-20:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(15deg);
+}
+
+.button-hover:hover{
+    transform: scale(1.03) rotate(15deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
 /* animation */
+
+.natural-border-container {
+    --size: 150px;
+    --border-width: 1px;
+    --gradient: linear-gradient(45deg, #65e8d4,#3d7e5d, #9deade, #25AD68);
+    
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .natural-border-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--gradient);
+    background-size: 200% 200%;
+    animation: 
+      border-pulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+      gradient-flow 8s linear infinite;
+    z-index: -1;
+  }
+  
+  .profile-img {
+    width: calc(100% - var(--border-width)*2);
+    height: calc(100% - var(--border-width)*2);
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  
+  @keyframes border-pulse {
+    0%, 100% { 
+      transform: scale(1);
+      opacity: 1;
+      filter: blur(0.5px);
+    }
+    50% { 
+      transform: scale(1.05);
+      opacity: 1;
+      filter: blur(0.9px);
+    }
+  }
+  
+  .natural-border-container::before {
+    animation: 
+      border-pulse 4s ease-in-out infinite,
+      gradient-flow 12s linear infinite;
+  }
+
 .sliding-text-container {
     height: 80px;
     overflow: hidden;
@@ -354,8 +472,6 @@ h5 {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
-
-
 
 /* Custom dark theme colors */
 [data-bs-theme="dark"] {
